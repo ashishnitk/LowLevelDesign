@@ -49,7 +49,7 @@ namespace FlyWeight
 
             CpuOrderItemFactory cpuOrderItemFactory = new CpuOrderItemFactory(c);
 
-            IEnumerable<Order> orders = new List<Order>();
+            List<Order> orders = new List<Order>();
 
             for (int i = 0; i < CPU_PURCHACE_COUNT; i++)
             {
