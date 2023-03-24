@@ -12,7 +12,7 @@ namespace DesignVendingMachine
             inventory = new List<ItemShelf>();
             InitialEmptyInventory(count);
         }
-        public List<ItemShelf> GetInventory()
+        public List<ItemShelf> GetInventory1()
         {
             return inventory;
         }

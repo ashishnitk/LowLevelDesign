@@ -20,11 +20,6 @@ namespace DesignVendingMachine.VendingStates.States
             return;
         }
 
-        public void ClickOnStartProductSelectionButton(VendingMachine machine)
-        {
-            machine.SetVendingMachineState(new SelectionState());
-        }
-
         public Item DispenseProduct(VendingMachine machine, int codeNumber)
         {
             throw new Exception("product can not be dispensed in hasMoney state");
@@ -39,6 +34,11 @@ namespace DesignVendingMachine.VendingStates.States
         {
             Console.WriteLine("Accepted the coin");
             machine.GetCoinList().Add(coin);
+        }
+
+        public void ClickOnStartProductSelectionButton(VendingMachine machine)
+        {
+            machine.SetVendingMachineState(new SelectionState());
         }
 
         public List<Coin> RefundFullMoney(VendingMachine machine)

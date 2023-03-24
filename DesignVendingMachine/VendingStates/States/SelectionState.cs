@@ -15,28 +15,31 @@ namespace DesignVendingMachine.VendingStates.States
             //1. get item of this codeNumber
             Item item = machine.GetInventory().GetItem(codeNumber);
 
-            //2. total amount paid by User
-            int paidByUser = 0;
-            foreach (var itm in machine.GetCoinList())
+            if (item != null)
             {
-                paidByUser = paidByUser+ ((int)itm);
-            }
-
-            //3. compare product price and amount paid by user
-            if (paidByUser < item.GetPrice())
-            {
-                Console.WriteLine("Insufficient Amount, Product you selected is for price: " + item.GetPrice() + " and you paid: " + paidByUser);
-                RefundFullMoney(machine);
-                throw new Exception("insufficient amount");
-            }
-            else if (paidByUser >= item.GetPrice())
-            {
-
-                if (paidByUser > item.GetPrice())
+                //2. total amount paid by User
+                int paidByUser = 0;
+                foreach (var itm in machine.GetCoinList())
                 {
-                    GetChange(paidByUser - item.GetPrice());
+                    paidByUser = paidByUser + ((int)itm);
                 }
-                machine.SetVendingMachineState(new DispenseState(machine, codeNumber));
+
+                //3. compare product price and amount paid by user
+                if (paidByUser < item.GetPrice())
+                {
+                    Console.WriteLine("Insufficient Amount, Product you selected is for price: " + item.GetPrice() + " and you paid: " + paidByUser);
+                    RefundFullMoney(machine);
+                    throw new Exception("insufficient amount");
+                }
+                else if (paidByUser >= item.GetPrice())
+                {
+
+                    if (paidByUser > item.GetPrice())
+                    {
+                        GetChange(paidByUser - item.GetPrice());
+                    }
+                    machine.SetVendingMachineState(new DispenseState(machine, codeNumber));
+                } 
             }
         }
 

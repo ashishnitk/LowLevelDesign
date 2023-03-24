@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInjection", "Depe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern", "DesignPattern\DesignPattern.csproj", "{2F2BA87B-2778-4BB3-9F86-392FBDE8E178}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignVendingMachine", "DesignVendingMachine\DesignVendingMachine.csproj", "{D98D4B95-BD3C-4EBE-A200-559CD3885ED0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignVendingMachine", "DesignVendingMachine\DesignVendingMachine.csproj", "{D98D4B95-BD3C-4EBE-A200-559CD3885ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cab", "CareTaker\Cab.csproj", "{A1F4EAD6-21C1-402A-952A-33B42675B907}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D98D4B95-BD3C-4EBE-A200-559CD3885ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D98D4B95-BD3C-4EBE-A200-559CD3885ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D98D4B95-BD3C-4EBE-A200-559CD3885ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F4EAD6-21C1-402A-952A-33B42675B907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F4EAD6-21C1-402A-952A-33B42675B907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F4EAD6-21C1-402A-952A-33B42675B907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F4EAD6-21C1-402A-952A-33B42675B907}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

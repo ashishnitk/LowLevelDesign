@@ -22,6 +22,10 @@ namespace DesignVendingMachine.VendingStates.States
             throw new Exception("you can not choose Product in idle state");
         }
 
+        /// <summary>
+        /// moving from Idle state to HasMoneyState
+        /// </summary>
+        /// <param name="machine"></param>
         public void ClickOnInsertCoinButton(VendingMachine machine)
         {
             machine.SetVendingMachineState(new HasMoneyState());
