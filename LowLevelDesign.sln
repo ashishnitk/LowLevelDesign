@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern", "DesignPatt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignVendingMachine", "DesignVendingMachine\DesignVendingMachine.csproj", "{D98D4B95-BD3C-4EBE-A200-559CD3885ED0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cab", "CareTaker\Cab.csproj", "{A1F4EAD6-21C1-402A-952A-33B42675B907}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cab", "CareTaker\Cab.csproj", "{A1F4EAD6-21C1-402A-952A-33B42675B907}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnakeLadderProblem", "SnakeLadderProblem\SnakeLadderProblem.csproj", "{FFE544ED-0D82-4417-A1C4-09D5F94F403B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeFolderAccess", "EmployeeFolderAccess\EmployeeFolderAccess.csproj", "{55586DC2-640B-40FF-AC22-D6E903CE84DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{8BC7F853-6EEB-45F3-9F26-95186810684B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{A1F4EAD6-21C1-402A-952A-33B42675B907}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1F4EAD6-21C1-402A-952A-33B42675B907}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1F4EAD6-21C1-402A-952A-33B42675B907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE544ED-0D82-4417-A1C4-09D5F94F403B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE544ED-0D82-4417-A1C4-09D5F94F403B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE544ED-0D82-4417-A1C4-09D5F94F403B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE544ED-0D82-4417-A1C4-09D5F94F403B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55586DC2-640B-40FF-AC22-D6E903CE84DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55586DC2-640B-40FF-AC22-D6E903CE84DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55586DC2-640B-40FF-AC22-D6E903CE84DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55586DC2-640B-40FF-AC22-D6E903CE84DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC7F853-6EEB-45F3-9F26-95186810684B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC7F853-6EEB-45F3-9F26-95186810684B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC7F853-6EEB-45F3-9F26-95186810684B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC7F853-6EEB-45F3-9F26-95186810684B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
